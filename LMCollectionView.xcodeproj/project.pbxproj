@@ -15,6 +15,9 @@
 		39C31E701DF00FC500568975 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C31E6E1DF00FC500568975 /* LaunchScreen.storyboard */; };
 		39C31E7B1DF00FC500568975 /* LMCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C31E7A1DF00FC500568975 /* LMCollectionViewTests.m */; };
 		39C31E861DF00FC500568975 /* LMCollectionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C31E851DF00FC500568975 /* LMCollectionViewUITests.m */; };
+		39C31EC11DF01E2000568975 /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C31EC01DF01E2000568975 /* MyModel.m */; };
+		39C31EC81DF026C700568975 /* LMCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C31EC61DF026C700568975 /* LMCollectionViewCell.m */; };
+		39C31EC91DF026C700568975 /* LMCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39C31EC71DF026C700568975 /* LMCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		39C31E811DF00FC500568975 /* LMCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LMCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C31E851DF00FC500568975 /* LMCollectionViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMCollectionViewUITests.m; sourceTree = "<group>"; };
 		39C31E871DF00FC500568975 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39C31EBF1DF01E2000568975 /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
+		39C31EC01DF01E2000568975 /* MyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModel.m; sourceTree = "<group>"; };
+		39C31EC51DF026C700568975 /* LMCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMCollectionViewCell.h; sourceTree = "<group>"; };
+		39C31EC61DF026C700568975 /* LMCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMCollectionViewCell.m; sourceTree = "<group>"; };
+		39C31EC71DF026C700568975 /* LMCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,11 @@
 				39C31E641DF00FC500568975 /* AppDelegate.m */,
 				39C31E661DF00FC500568975 /* ViewController.h */,
 				39C31E671DF00FC500568975 /* ViewController.m */,
+				39C31EBF1DF01E2000568975 /* MyModel.h */,
+				39C31EC01DF01E2000568975 /* MyModel.m */,
+				39C31EC51DF026C700568975 /* LMCollectionViewCell.h */,
+				39C31EC61DF026C700568975 /* LMCollectionViewCell.m */,
+				39C31EC71DF026C700568975 /* LMCollectionViewCell.xib */,
 				39C31E691DF00FC500568975 /* Main.storyboard */,
 				39C31E6C1DF00FC500568975 /* Assets.xcassets */,
 				39C31E6E1DF00FC500568975 /* LaunchScreen.storyboard */,
@@ -245,6 +258,7 @@
 			files = (
 				39C31E701DF00FC500568975 /* LaunchScreen.storyboard in Resources */,
 				39C31E6D1DF00FC500568975 /* Assets.xcassets in Resources */,
+				39C31EC91DF026C700568975 /* LMCollectionViewCell.xib in Resources */,
 				39C31E6B1DF00FC500568975 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +286,8 @@
 			files = (
 				39C31E681DF00FC500568975 /* ViewController.m in Sources */,
 				39C31E651DF00FC500568975 /* AppDelegate.m in Sources */,
+				39C31EC81DF026C700568975 /* LMCollectionViewCell.m in Sources */,
+				39C31EC11DF01E2000568975 /* MyModel.m in Sources */,
 				39C31E621DF00FC500568975 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

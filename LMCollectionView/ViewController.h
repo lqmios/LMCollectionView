@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#define Screen_width [UIScreen mainScreen].bounds.size.width
+#define Screen_height [UIScreen mainScreen].bounds.size.height
 
 @interface ViewController : UIViewController
+@property(nonatomic,strong)NSIndexPath *currentSelectIndex;
+
 
 
 @end
