@@ -42,9 +42,6 @@ static NSString *cellID = @"cellID";
     
     [self loadData];
 }
-
-#pragma mark --UICollectionViewDataSource,UICollectionViewDelegate----
-
 #pragma mark --UICollectionViewDataSource,UICollectionViewDelegate----
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -102,13 +99,14 @@ static NSString *cellID = @"cellID";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    //如果不是选中当前item
     if (_currentSelectIndex != nil || _currentSelectIndex != indexPath) {
         cell = (LMCollectionViewCell *)[collectionView cellForItemAtIndexPath:_currentSelectIndex];
         cell.nameLabel.textColor = [UIColor blackColor];
         cell.contenLabel.textColor = [UIColor blackColor];
         cell.bgView.backgroundColor = [UIColor whiteColor];
     }
-    
+    //否则
     cell = (LMCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     [cell UpdateCellWithState:!cell.isSelected];
     _currentSelectIndex = indexPath;
@@ -116,7 +114,7 @@ static NSString *cellID = @"cellID";
     cell.contenLabel.textColor = [UIColor whiteColor];
     cell.bgView.backgroundColor = [UIColor redColor];
     
-    NSLog(@"选择商品");
+    NSLog(@"选择商品:%ld",(long)indexPath.row);
 
 
 }
